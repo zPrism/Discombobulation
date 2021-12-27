@@ -848,4 +848,4 @@ client_set_event_callback("player_death", player_death)
 client_set_event_callback("paint", clantag_changer)
 
 local load = ui_new_button("AA", "Anti-aimbot angles", "Load Good Settings", settings)
-local log = ui_new_button("AA", "Anti-aimbot angles", "Update Log", update_log)
+local log = ui_new_button("AA", "Anti-aimbot angles", "Update Log", update_log) 
