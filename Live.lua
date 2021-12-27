@@ -816,7 +816,7 @@ local function hide_shit()
     ui_set_visible(aa.fake_limit, ui_get(aa.fake_type) == "Static" or ui_get(aa.fake_type) == "On Hit")
     ui_set_visible(aa.bodyyaw_slider, ui_get(aa.bodyyaw) == "Static" or ui_get(aa.bodyyaw) == "Jitter")
     ui_set_visible(aa.jitter_slider, ui_get(aa.jitter) == "Center" or ui_get(aa.jitter) == "Offset" or ui_get(aa.jitter) == "Random")
-    ui_set_visible(aa.fake_limit, ui_get(aa.antiaim) == "Gamesense" or ui_get(aa.antiaim) == "Detect Missed Side" or ui_get(aa.mode) == 5 and fake_stuff)
+    ui_set_visible(aa.fake_limit, ui_get(aa.fake_type) == 'Static' or ui_get(aa.fake_type) =='Randomize' or ui_get(aa.fake_type) == 'On Hit')
 
     ui_set_visible(aa.player_state, dynamic_fake)
     ui_set_visible(aa.air_limit, player_state == "In Air" and dynamic_fake)
